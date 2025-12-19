@@ -10,6 +10,7 @@ dependencies = [
 ]
 readme = "README.md"
 authors = [{name = "Kushagra Kumar"}]
+license = {text = "MIT"}
 homepage = "https://github.com/kkumar/get-wrapped"
 
 

@@ -73,6 +73,28 @@ summary = {
 
 wrapped_text = generate_wrapped(summary)
 print(wrapped_text)
+
+Output - 
+# 🏃‍♀️ Your Activity Recap
+
+## **Total Sessions** 📊
+5 activities logged
+
+## **Time Investment** ⏱️
+175 total minutes of activity
+Average session: 35 minutes
+
+## **Activity Breakdown** 🔥
+**Running** dominated with 3 sessions
+**Biking** rounded out with 2 sessions
+
+## **Session Range** 📈
+Shortest: 20 minutes
+Longest: 60 minutes
+
+## **The Verdict** ✨
+You kept it consistent with a solid mix of cardio activities! 🎯
+
 ```
 
 ---
