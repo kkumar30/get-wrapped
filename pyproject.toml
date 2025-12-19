@@ -1,13 +1,17 @@
 [project]
 name = "get-wrapped"
 version = "0.1.0"
-description = "Add your description here"
+description = "Create your own Wrapped-style summary from any dataset"
 requires-python = ">=3.13"
 dependencies = [
     "requests>=2.32.5",
     "pandas>=2.3.3",
     "python-dotenv>=1.2.1",
 ]
+readme = "README.md"
+authors = [{name = "Kushagra Kumar"}]
+homepage = "https://github.com/kkumar/get-wrapped"
+
 
 [build-system]
 requires = ["uv_build >= 0.9.17, <0.10.0"]
