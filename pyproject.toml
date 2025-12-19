@@ -1,6 +1,6 @@
 [project]
 name = "get-wrapped"
-version = "0.1.0"
+version = "0.1.1"
 description = "Create your own Wrapped-style summary from any dataset"
 requires-python = ">=3.13"
 dependencies = [
