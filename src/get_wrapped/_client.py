@@ -39,7 +39,7 @@ def call_model(prompt: str) -> str:
         model = MODEL_NAME or "claude-sonnet-4-20250514"  # Updated default model
         payload = {
             "model": model,
-            "max_tokens": 1024,
+            "max_tokens": 2048,
             "messages": [  # New format: messages array instead of prompt string
                 {"role": "user", "content": prompt}
             ],
