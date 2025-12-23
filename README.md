@@ -33,7 +33,7 @@ uv run python examples/run_wrapped.py
 
 ## Environment Variables
 
-Set your model credentials:
+Set your model credentials (Not needed if you pass in your model credentials):
 
 **Anthropic Example:**
 
@@ -41,9 +41,9 @@ Set your model credentials:
 export MODEL_API_URL="https://api.anthropic.com/v1/complete"
 export MODEL_API_KEY="sk-xxxx"
 export MODEL_NAME="claude-sonnet-4"      # optional
+```
 
-
-**OpenAI Example:**
+**Or OpenAI Example:**
 
 ```bash
 export MODEL_API_URL="https://api.openai.com/v1/chat/completions"
@@ -51,13 +51,7 @@ export MODEL_API_KEY="sk-xxxx"
 export MODEL_NAME="gpt-4.1-mini"  # optional
 ```
 
-
-```
-
-> For local development, you can also use a `.env` file and `python-dotenv`.
-
 ---
-
 ## Usage
 
 ```python
@@ -71,10 +65,18 @@ summary = {
     },
 }
 
+# Example summary (or pandas dataframe)
+# summary = pd.DataFrame({
+#     "activity": ["run", "run", "run", "bike", "bike"],
+#     "minutes": [20, 30, 35, 30, 60]
+# })
+
 wrapped_text = generate_wrapped(summary)
 print(wrapped_text)
+```
 
-Output - 
+## Output - 
+```
 # 🏃‍♀️ Your Activity Recap
 
 ## **Total Sessions** 📊
@@ -104,6 +106,7 @@ You kept it consistent with a solid mix of cardio activities! 🎯
 1. Provide a **structured summary** of your dataset.  
 2. The library generates a **prompt** and sends it to your LLM (OpenAI or Anthropic).  
 3. Receive a **fun, readable Wrapped-style recap** strictly based on your data.
+4. Bring your own API key—or let the library pick it up from your local environment.
 
 ---
 
