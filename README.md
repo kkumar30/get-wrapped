@@ -21,14 +21,6 @@ Install from PyPI:
 pip install get-wrapped
 ```
 
-Or for local development:
-
-```bash
-uv sync
-uv build
-uv run python examples/run_wrapped.py
-```
-
 ---
 
 ## Environment Variables
@@ -114,8 +106,9 @@ You kept it consistent with a solid mix of cardio activities! 🎯
 
 Clone the repository:
 
+
 ```bash
-git clone https://github.com/yourusername/get-wrapped.git
+git clone https://github.com/kkumar/get-wrapped.git
 cd get-wrapped
 uv sync
 uv run python examples/run_wrapped.py
